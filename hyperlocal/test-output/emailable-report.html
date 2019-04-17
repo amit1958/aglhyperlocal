@@ -8,11 +8,33 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="7">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">17,253</td><td></td><td></td></tr>
+<tr><th colspan="7">Suite</th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">8</td><td class="num">0</td><td class="num attn">3</td><td class="num">245,716</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.hyperlocal.EBookNowTest</td><td><a href="#m0">ebookTest</a></td><td rowspan="1">1555500347531</td><td rowspan="1">1234</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.hyperlocal.CarPageTest</td><td><a href="#m0">carPageTest</a></td><td rowspan="1">1555507446142</td><td rowspan="1">12371</td></tr><tr class="failedodd"><td rowspan="1">com.hyperlocal.FinanceTest</td><td><a href="#m1">financePageTest</a></td><td rowspan="1">1555507525197</td><td rowspan="1">8397</td></tr><tr class="failedeven"><td rowspan="1">com.hyperlocal.HomePageTest</td><td><a href="#m2">homePageTest</a></td><td rowspan="1">1555507434853</td><td rowspan="1">55</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.hyperlocal.AboutUsTest</td><td><a href="#m3">aboutUsTest</a></td><td rowspan="1">1555507654261</td><td rowspan="1">8134</td></tr><tr class="passedodd"><td rowspan="1">com.hyperlocal.AccessoriesTest</td><td><a href="#m4">accessoriesPageTest</a></td><td rowspan="1">1555507499776</td><td rowspan="1">15384</td></tr><tr class="passedeven"><td rowspan="1">com.hyperlocal.CareersTest</td><td><a href="#m5">careerPageTest</a></td><td rowspan="1">1555507590326</td><td rowspan="1">17667</td></tr><tr class="passedodd"><td rowspan="1">com.hyperlocal.ContactUsTest</td><td><a href="#m6">contactUsPageTest</a></td><td rowspan="1">1555507618477</td><td rowspan="1">6931</td></tr><tr class="passedeven"><td rowspan="1">com.hyperlocal.DrivingSchoolTest</td><td><a href="#m7">drivingschoolPageTest</a></td><td rowspan="1">1555507570608</td><td rowspan="1">8235</td></tr><tr class="passedodd"><td rowspan="1">com.hyperlocal.EBookNowTest</td><td><a href="#m8">ebookTest</a></td><td rowspan="1">1555507637483</td><td rowspan="1">6123</td></tr><tr class="passedeven"><td rowspan="1">com.hyperlocal.InsuranceTest</td><td><a href="#m9">insurancePageTest</a></td><td rowspan="1">1555507543170</td><td rowspan="1">13955</td></tr><tr class="passedodd"><td rowspan="1">com.hyperlocal.ServiceTest</td><td><a href="#m10">carPageTest</a></td><td rowspan="1">1555507470002</td><td rowspan="1">14690</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">com.hyperlocal.EBookNowTest#ebookTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test</h2><h3 id="m0">com.hyperlocal.CarPageTest#carPageTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [http://arenaofsanand.hyperlocalcmstage.co.in//cars/alto-k10] but found [http://arenaofsanand.hyperlocalcmstage.co.in/en/cars/alto-k10]
+	at hyperlocalUtils.Asserts.carPageAssert(Asserts.java:34)
+	at hyperlocalPages.CarPageElements.carPage(CarPageElements.java:40)
+	at com.hyperlocal.CarPageTest.carPageTest(CarPageTest.java:11)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.hyperlocal.FinanceTest#financePageTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [4,36,060] but found [4,36,112]
+	at hyperlocalUtils.Asserts.financePageAssert(Asserts.java:72)
+	at hyperlocalPages.FinanceElements.financePage(FinanceElements.java:45)
+	at com.hyperlocal.FinanceTest.financePageTest(FinanceTest.java:11)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.hyperlocal.HomePageTest#homePageTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [Maruti Suzuki ARENA Car Dealers in Jaipur Road, Ajmer - Ajmer Auto Agencies Showroom in Jaipur Road, Ajmer] but found [Maruti Suzuki ARENA Car Dealers in Sanand, Ahmedabad - Tanu Motors Car Showroom Ahmedabad]
+	at hyperlocalUtils.Asserts.homePageAssert(Asserts.java:15)
+	at hyperlocalPages.HomePageElements.homePage(HomePageElements.java:27)
+	at com.hyperlocal.HomePageTest.homePageTest(HomePageTest.java:11)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.hyperlocal.AboutUsTest#aboutUsTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.hyperlocal.AccessoriesTest#accessoriesPageTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.hyperlocal.CareersTest#careerPageTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.hyperlocal.ContactUsTest#contactUsPageTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.hyperlocal.DrivingSchoolTest#drivingschoolPageTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">com.hyperlocal.EBookNowTest#ebookTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">com.hyperlocal.InsuranceTest#insurancePageTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">com.hyperlocal.ServiceTest#carPageTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

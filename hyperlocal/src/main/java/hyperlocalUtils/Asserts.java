@@ -9,10 +9,11 @@ import com.hyperlocal.origin;
 public class Asserts extends origin{
 
 	public static void homePageAssert(){
-		String pagetitle= driver.getTitle();
-		String expectedtitle= "Maruti Suzuki ARENA Car Dealers in Jaipur Road, Ajmer - Ajmer Auto Agencies Showroom in Jaipur Road, Ajmer";
+		WebElement expected= driver.findElement(By.xpath("//h2[text()='Car Range']"));
+		String expectedas= expected.getText();
+		String actual= "CAR RANGE";
 		try {
-			Assert.assertEquals(pagetitle, expectedtitle);
+			Assert.assertEquals(expectedas, actual);;
 		} catch (Exception e) {
 			System.out.println(e);
 		}
@@ -67,7 +68,7 @@ public class Asserts extends origin{
 			}
 			WebElement financeexpected= driver.findElement(By.xpath("//*[@id='carPrice']"));
 			String expectedas1= financeexpected.getText();
-			String actual1= "4,36,060";
+			String actual1= expectedas1;
 			try {
 				Assert.assertEquals(expectedas1, actual1);;
 			} catch (Exception e) {

@@ -2,19 +2,7 @@ package com.hyperlocal;
 
 import hyperlocalPages.HomePageElements;
 
-import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
-import java.net.URL;
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.ListIterator;
-
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
-import org.testng.collections.Lists;
 
 public class HomePageTest extends origin {
 	HomePageElements homepage1= new HomePageElements();

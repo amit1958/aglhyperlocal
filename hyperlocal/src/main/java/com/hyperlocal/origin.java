@@ -34,7 +34,7 @@ public class origin {
 	public  void startUp() throws IOException{
 	
 		try{
-			File myfile = new File("C:\\Users\\AGL\\AmitSharma\\workspace\\hyperlocal\\MHL.properties");
+			File myfile = new File("C:\\Users\\AGL\\git\\hyperlocal\\hyperlocal\\MHL.properties");
 			System.out.println("exists:==> "+myfile.exists());
 			FileInputStream myInput= new FileInputStream(myfile);
 			pr.load(myInput);
