@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="17253" started-at="2019-04-17T11:25:33Z" finished-at="2019-04-17T11:25:50Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="17253" started-at="2019-04-17T11:25:33Z" finished-at="2019-04-17T11:25:50Z">
+      <class name="com.hyperlocal.EBookNowTest">
+        <test-method status="PASS" signature="startUp()[pri:0, instance:com.hyperlocal.EBookNowTest@6093dd95]" name="startUp" is-config="true" duration-ms="13807" started-at="2019-04-17T11:25:33Z" finished-at="2019-04-17T11:25:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startUp -->
+        <test-method status="PASS" signature="ebookTest()[pri:1, instance:com.hyperlocal.EBookNowTest@6093dd95]" name="ebookTest" duration-ms="1234" started-at="2019-04-17T11:25:47Z" finished-at="2019-04-17T11:25:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ebookTest -->
+        <test-method status="PASS" signature="screenShot()[pri:0, instance:com.hyperlocal.EBookNowTest@6093dd95]" name="screenShot" is-config="true" duration-ms="2167" started-at="2019-04-17T11:25:48Z" finished-at="2019-04-17T11:25:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+      </class> <!-- com.hyperlocal.EBookNowTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
