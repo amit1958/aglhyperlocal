@@ -28,7 +28,7 @@ public class ServiceElements extends origin {
 
 	
 	public void servicePage() throws InterruptedException  {
-		WebElement service= driver.findElement(By.xpath("/html/body/main/header/div[3]/div/div[1]/div/div[2]/ul/li[4]/a"));
+		WebElement service= driver.findElement(By.xpath("//a[contains(text(),'Service')]"));
 		String carpageurl= driver.getCurrentUrl();
 		System.out.println("=====carpageurl is ====" + carpageurl);		service.click();
 		Thread.sleep(3000);
@@ -45,8 +45,7 @@ public class ServiceElements extends origin {
 		driver.findElement(By.id("inpaddress2")).sendKeys("TestServicepage");
 		driver.findElement(By.id("disclaimer")).click();
 		driver.findElement(By.id("btnsubmit")).click();
-	
-		Thread.sleep(5000);
+		Thread.sleep(8000);
 		Asserts.thankYou();
 		}
 	

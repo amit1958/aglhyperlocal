@@ -30,7 +30,7 @@ public class InsuranceElements extends origin {
 	public void insurancePage() throws InterruptedException  {
 		String carpageurl= driver.getCurrentUrl();
 		System.out.println("=====carpageurl is ====" + carpageurl);
-		WebElement insurance= driver.findElement(By.xpath("/html/body/main/header/div[3]/div/div[1]/div/div[2]/ul/li[7]/a"));
+		WebElement insurance= driver.findElement(By.xpath("//a[contains(text(),'Insurance')]"));
 		insurance.click();
 		Select model= new Select(driver.findElement(By.id("ddlCarModel")));
 		model.selectByVisibleText("Celerio");

@@ -30,7 +30,7 @@ public class FinanceElements extends origin {
 	public void financePage() throws InterruptedException  {
 		String carpageurl= driver.getCurrentUrl();
 		System.out.println("=====carpageurl is ====" + carpageurl);
-		WebElement finance= driver.findElement(By.xpath("/html/body/main/header/div[3]/div/div[1]/div/div[2]/ul/li[6]/a"));
+		WebElement finance= driver.findElement(By.xpath("//a[contains(text(),'Finance')]"));
 		//driver.navigate().to(pr.getProperty("car"));
 		finance.click();
 		Select carmodel= new Select(driver.findElement(By.id("ddlcarmodel")));
@@ -51,7 +51,7 @@ public class FinanceElements extends origin {
 	String amountis= calculatedAmount.getText();
 	System.out.println("===amount is ===" +amountis);
 	Thread.sleep(5000);
-	Asserts.financecalculateEMI();
+	Asserts.financePageAssert();
 	}
 	
 }

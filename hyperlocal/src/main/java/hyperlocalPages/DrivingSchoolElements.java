@@ -30,19 +30,19 @@ public class DrivingSchoolElements extends origin {
 	public void drivingSchoolPage() throws InterruptedException  {
 		String carpageurl= driver.getCurrentUrl();
 		System.out.println("=====carpageurl is ====" + carpageurl);
-		WebElement drivingschool= driver.findElement(By.xpath("/html/body/main/header/div[3]/div/div[1]/div/div[2]/ul/li[8]/a"));
+		WebElement drivingschool= driver.findElement(By.xpath("//a[contains(text(),'Driving School')]"));
 		//driver.navigate().to(pr.getProperty("car"));
 		drivingschool.click();
 		
 		driver.findElement(By.id("inpname")).sendKeys("DrivingSchoolTest");
 		driver.findElement(By.id("inpphone")).sendKeys("9800000000");
 		driver.findElement(By.id("inpemail")).sendKeys("DrivingSchoolTest@testing.com");
-		driver.findElement(By.id("inpLocation")).sendKeys("gurgaon location");
+		driver.findElement(By.xpath("//input[@id='inpLocation']")).sendKeys("gurgaon location");
 		
 		driver.findElement(By.id("disclaimer")).click();
 		driver.findElement(By.id("savedriving")).click();
 		
-		Thread.sleep(5000);
+		Thread.sleep(10000);
 		Asserts.thankYou();
 		
 		}

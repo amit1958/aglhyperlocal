@@ -30,7 +30,7 @@ public class ContactUsElements extends origin {
 	public void contactPage() throws InterruptedException  {
 		String carpageurl= driver.getCurrentUrl();
 		System.out.println("=====carpageurl is ====" + carpageurl);
-		WebElement contact= driver.findElement(By.xpath("/html/body/main/header/div[3]/div/div[1]/div/div[2]/ul/li[10]/a"));
+		WebElement contact= driver.findElement(By.xpath("//a[contains(text(),'Contact Us')]"));
 		contact.click();
 	
 		Thread.sleep(5000);

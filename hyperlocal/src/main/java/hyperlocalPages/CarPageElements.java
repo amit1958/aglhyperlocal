@@ -29,11 +29,11 @@ public class CarPageElements extends origin {
 	
 	public void carPage() throws InterruptedException  {
 		//WebElement cars= driver.findElement(By.linkText("Cars"));
-		WebElement cars= driver.findElement(By.xpath("/html/body/main/header/div[3]/div/div[1]/div/div[2]/ul/li[3]/a"));
+		WebElement cars= driver.findElement(By.xpath("//a[contains(text(),'Cars')]"));
 		//driver.navigate().to(pr.getProperty("car"));
 		Actions mouse= new Actions(driver);
 		mouse.moveToElement(cars).build().perform();
-		driver.findElement(By.linkText("Alto K10")).click();
+		driver.findElement(By.linkText("WagonR")).click();
 		String carpageurl= driver.getCurrentUrl();
 		System.out.println("=====carpageurl is ====" + carpageurl);
 		Thread.sleep(5000);
@@ -49,7 +49,7 @@ public class CarPageElements extends origin {
 		getaquote.click();
 		//putting assert
 		Select variant= new Select(driver.findElement(By.id("ddlvariant")));
-		variant.selectByVisibleText("ALTO K10 LXI(O)");
+		variant.selectByVisibleText("WAGONR LXI 1.0L");
 		driver.findElement(By.id("inpname")).sendKeys("AmitTestQuoteName");
 		driver.findElement(By.id("inpemail")).sendKeys("testquote@mailinator.com");
 		driver.findElement(By.id("inpphone")).sendKeys("9800000000");
@@ -86,9 +86,22 @@ public class CarPageElements extends origin {
 		carpagemethod.carPage();
 		String currenturl=driver.getCurrentUrl();
 		System.out.println("====current urls ======" +currenturl);
-		driver.findElement(By.xpath("/html/body/main/section[2]/div/ul/li[4]/a/div[2]/p")).click();
+		driver.findElement(By.xpath("//li[4]//a[1]//div[2]")).click();
 	//User should navigate to the Finance Page
-		Thread.sleep(10000);
-		Asserts.navigateFinancepage();
+		Thread.sleep(80000);
+		Asserts.financePageAssert();
+	}
+	
+	public void carPriceValidation() throws InterruptedException{
+		CarPageElements carpagemethod= new CarPageElements();
+		carpagemethod.carPage();
+		String currenturl=driver.getCurrentUrl();
+		System.out.println("====current urls ======" +currenturl);
+		WebElement price= driver.findElement(By.xpath("//label[@id='reveal-price']"));
+		String carprice= price.getText();
+		System.out.println("===Car Price is=== " +carprice );
+	//User should navigate to the Finance Page
+		Thread.sleep(8000);
+		Asserts.carPriceValidation();
 	}
 }

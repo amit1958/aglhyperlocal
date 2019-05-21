@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Suite">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,31 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">11 methods, 3 failed,   8 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Suite">
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.hyperlocal.CarPageTest" hash-for-method="carPageTest">carPageTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.hyperlocal.FinanceTest" hash-for-method="financePageTest">financePageTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.hyperlocal.HomePageTest" hash-for-method="homePageTest">homePageTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
+                    <span class="method-stats">10 methods,   10 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -132,11 +108,6 @@
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.hyperlocal.AccessoriesTest" hash-for-method="accessoriesPageTest">accessoriesPageTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.hyperlocal.ServiceTest" hash-for-method="carPageTest">carPageTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -161,7 +132,22 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.hyperlocal.FinanceTest" hash-for-method="financePageTest">financePageTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.hyperlocal.HomePageTest" hash-for-method="homePageTest">homePageTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.hyperlocal.InsuranceTest" hash-for-method="insurancePageTest">insurancePageTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.hyperlocal.ServiceTest" hash-for-method="servicecPageTest">servicecPageTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -176,144 +162,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.hyperlocal.CarPageTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="carPageTest">
-                  </a> <!-- carPageTest -->
-                  <span class="method-name">carPageTest</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [http://arenaofsanand.hyperlocalcmstage.co.in//cars/alto-k10] but found [http://arenaofsanand.hyperlocalcmstage.co.in/en/cars/alto-k10]
-	at hyperlocalUtils.Asserts.carPageAssert(Asserts.java:34)
-	at hyperlocalPages.CarPageElements.carPage(CarPageElements.java:40)
-	at com.hyperlocal.CarPageTest.carPageTest(CarPageTest.java:11)
-... Removed 31 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.hyperlocal.FinanceTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="financePageTest">
-                  </a> <!-- financePageTest -->
-                  <span class="method-name">financePageTest</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [4,36,060] but found [4,36,112]
-	at hyperlocalUtils.Asserts.financePageAssert(Asserts.java:72)
-	at hyperlocalPages.FinanceElements.financePage(FinanceElements.java:45)
-	at com.hyperlocal.FinanceTest.financePageTest(FinanceTest.java:11)
-... Removed 31 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.hyperlocal.HomePageTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="homePageTest">
-                  </a> <!-- homePageTest -->
-                  <span class="method-name">homePageTest</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [Maruti Suzuki ARENA Car Dealers in Jaipur Road, Ajmer - Ajmer Auto Agencies Showroom in Jaipur Road, Ajmer] but found [Maruti Suzuki ARENA Car Dealers in Sanand, Ahmedabad - Tanu Motors Car Showroom Ahmedabad]
-	at hyperlocalUtils.Asserts.homePageAssert(Asserts.java:15)
-	at hyperlocalPages.HomePageElements.homePage(HomePageElements.java:27)
-	at com.hyperlocal.HomePageTest.homePageTest(HomePageTest.java:11)
-... Removed 31 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.hyperlocal.ContactUsTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="contactUsPageTest">
-                  </a> <!-- contactUsPageTest -->
-                  <span class="method-name">contactUsPageTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.hyperlocal.AccessoriesTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="accessoriesPageTest">
-                  </a> <!-- accessoriesPageTest -->
-                  <span class="method-name">accessoriesPageTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.hyperlocal.ServiceTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="carPageTest">
-                  </a> <!-- carPageTest -->
-                  <span class="method-name">carPageTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.hyperlocal.AboutUsTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="aboutUsTest">
-                  </a> <!-- aboutUsTest -->
-                  <span class="method-name">aboutUsTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.hyperlocal.DrivingSchoolTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="drivingschoolPageTest">
-                  </a> <!-- drivingschoolPageTest -->
-                  <span class="method-name">drivingschoolPageTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -347,6 +195,81 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
+              <span class="class-name">com.hyperlocal.HomePageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="homePageTest">
+                  </a> <!-- homePageTest -->
+                  <span class="method-name">homePageTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.hyperlocal.ContactUsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="contactUsPageTest">
+                  </a> <!-- contactUsPageTest -->
+                  <span class="method-name">contactUsPageTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.hyperlocal.AccessoriesTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="accessoriesPageTest">
+                  </a> <!-- accessoriesPageTest -->
+                  <span class="method-name">accessoriesPageTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.hyperlocal.DrivingSchoolTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="drivingschoolPageTest">
+                  </a> <!-- drivingschoolPageTest -->
+                  <span class="method-name">drivingschoolPageTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.hyperlocal.ServiceTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="servicecPageTest">
+                  </a> <!-- servicecPageTest -->
+                  <span class="method-name">servicecPageTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
               <span class="class-name">com.hyperlocal.InsuranceTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -355,6 +278,36 @@
                   <a name="insurancePageTest">
                   </a> <!-- insurancePageTest -->
                   <span class="method-name">insurancePageTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.hyperlocal.AboutUsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="aboutUsTest">
+                  </a> <!-- aboutUsTest -->
+                  <span class="method-name">aboutUsTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.hyperlocal.FinanceTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="financePageTest">
+                  </a> <!-- financePageTest -->
+                  <span class="method-name">financePageTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -372,7 +325,15 @@
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.hyperlocal.HomePageTest&quot;/&gt;
-      &lt;class name=&quot;com.hyperlocal.CarPageTest&quot;/&gt;
+      &lt;class name=&quot;com.hyperlocal.CarPageTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;CarPageTest&quot;/&gt;
+          &lt;include name=&quot;carGetaquoteTest&quot;/&gt;
+          &lt;include name=&quot;bookaTestDriveTest&quot;/&gt;
+          &lt;include name=&quot;navigatetoEMICalculatorTest&quot;/&gt;
+          &lt;include name=&quot;carPriceCheckup&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.hyperlocal.CarPageTest --&gt;
       &lt;class name=&quot;com.hyperlocal.ServiceTest&quot;/&gt;
       &lt;class name=&quot;com.hyperlocal.AccessoriesTest&quot;/&gt;
       &lt;class name=&quot;com.hyperlocal.FinanceTest&quot;/&gt;
@@ -421,51 +382,47 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(11);
+data.addRows(10);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'careerPageTest')
 data.setCell(0, 2, 'com.hyperlocal.CareersTest')
-data.setCell(0, 3, 17667);
+data.setCell(0, 3, 26067);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'accessoriesPageTest')
-data.setCell(1, 2, 'com.hyperlocal.AccessoriesTest')
-data.setCell(1, 3, 15384);
+data.setCell(1, 1, 'servicecPageTest')
+data.setCell(1, 2, 'com.hyperlocal.ServiceTest')
+data.setCell(1, 3, 14731);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'carPageTest')
-data.setCell(2, 2, 'com.hyperlocal.ServiceTest')
-data.setCell(2, 3, 14690);
+data.setCell(2, 1, 'insurancePageTest')
+data.setCell(2, 2, 'com.hyperlocal.InsuranceTest')
+data.setCell(2, 3, 13162);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'insurancePageTest')
-data.setCell(3, 2, 'com.hyperlocal.InsuranceTest')
-data.setCell(3, 3, 13955);
+data.setCell(3, 1, 'financePageTest')
+data.setCell(3, 2, 'com.hyperlocal.FinanceTest')
+data.setCell(3, 3, 13102);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'carPageTest')
-data.setCell(4, 2, 'com.hyperlocal.CarPageTest')
-data.setCell(4, 3, 12371);
+data.setCell(4, 1, 'drivingschoolPageTest')
+data.setCell(4, 2, 'com.hyperlocal.DrivingSchoolTest')
+data.setCell(4, 3, 12568);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'financePageTest')
-data.setCell(5, 2, 'com.hyperlocal.FinanceTest')
-data.setCell(5, 3, 8397);
+data.setCell(5, 1, 'accessoriesPageTest')
+data.setCell(5, 2, 'com.hyperlocal.AccessoriesTest')
+data.setCell(5, 3, 11201);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'drivingschoolPageTest')
-data.setCell(6, 2, 'com.hyperlocal.DrivingSchoolTest')
-data.setCell(6, 3, 8235);
+data.setCell(6, 1, 'ebookTest')
+data.setCell(6, 2, 'com.hyperlocal.EBookNowTest')
+data.setCell(6, 3, 7300);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'aboutUsTest')
 data.setCell(7, 2, 'com.hyperlocal.AboutUsTest')
-data.setCell(7, 3, 8134);
+data.setCell(7, 3, 6922);
 data.setCell(8, 0, 8)
 data.setCell(8, 1, 'contactUsPageTest')
 data.setCell(8, 2, 'com.hyperlocal.ContactUsTest')
-data.setCell(8, 3, 6931);
+data.setCell(8, 3, 6620);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'ebookTest')
-data.setCell(9, 2, 'com.hyperlocal.EBookNowTest')
-data.setCell(9, 3, 6123);
-data.setCell(10, 0, 10)
-data.setCell(10, 1, 'homePageTest')
-data.setCell(10, 2, 'com.hyperlocal.HomePageTest')
-data.setCell(10, 3, 55);
+data.setCell(9, 1, 'homePageTest')
+data.setCell(9, 2, 'com.hyperlocal.HomePageTest')
+data.setCell(9, 3, 102);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
@@ -485,9 +442,81 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">11 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.hyperlocal.CareersTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">email</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.hyperlocal.EBookNowTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">email</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.hyperlocal.ContactUsTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">email</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.hyperlocal.AccessoriesTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">email</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.hyperlocal.CarPageTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">email</span>
+                <br/>
+                <span class="ignored-method-name">carPageTest</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.hyperlocal.DrivingSchoolTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">email</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.hyperlocal.ServiceTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">email</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.hyperlocal.InsuranceTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">email</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.hyperlocal.FinanceTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">email</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.hyperlocal.AboutUsTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">email</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Suite" class="panel">
@@ -502,169 +531,155 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">homePageTest</span>
-                <span class="method-start">15883 ms</span>
+                <span class="method-start">65258 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">screenShot</span>
-                <span class="method-start">15946 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.hyperlocal.CarPageTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">startUp</span>
-                <span class="method-start">18482 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">carPageTest</span>
-                <span class="method-start">27172 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">screenShot</span>
-                <span class="method-start">39547 ms</span>
+                <span class="method-name">screenShot([TestResult name=homePageTest status=SUCCESS method=HomePageTest.homePageTest()[pri:0, instance:com....)</span>
+                <span class="method-start">65363 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.hyperlocal.ServiceTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">startUp</span>
-                <span class="method-start">41517 ms</span>
+                <span class="method-start">67555 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">carPageTest</span>
-                <span class="method-start">51032 ms</span>
+                <span class="method-name">servicecPageTest</span>
+                <span class="method-start">147018 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">screenShot</span>
-                <span class="method-start">65725 ms</span>
+                <span class="method-name">screenShot([TestResult name=servicecPageTest status=SUCCESS method=ServiceTest.servicecPageTest()[pri:1, instan...)</span>
+                <span class="method-start">161753 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.hyperlocal.AccessoriesTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">startUp</span>
-                <span class="method-start">67726 ms</span>
+                <span class="method-start">163290 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">accessoriesPageTest</span>
-                <span class="method-start">80806 ms</span>
+                <span class="method-start">211927 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">screenShot</span>
-                <span class="method-start">96194 ms</span>
+                <span class="method-name">screenShot([TestResult name=accessoriesPageTest status=SUCCESS method=AccessoriesTest.accessoriesPageTest()[pri...)</span>
+                <span class="method-start">223132 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.hyperlocal.FinanceTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">startUp</span>
-                <span class="method-start">98643 ms</span>
+                <span class="method-start">225037 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">financePageTest</span>
-                <span class="method-start">106227 ms</span>
+                <span class="method-start">273914 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">screenShot</span>
-                <span class="method-start">114628 ms</span>
+                <span class="method-name">screenShot([TestResult name=financePageTest status=SUCCESS method=FinanceTest.financePageTest()[pri:1, instance...)</span>
+                <span class="method-start">287017 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.hyperlocal.InsuranceTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">startUp</span>
-                <span class="method-start">116473 ms</span>
+                <span class="method-start">288598 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">insurancePageTest</span>
-                <span class="method-start">124200 ms</span>
+                <span class="method-start">338789 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">screenShot</span>
-                <span class="method-start">138160 ms</span>
+                <span class="method-name">screenShot([TestResult name=insurancePageTest status=SUCCESS method=InsuranceTest.insurancePageTest()[pri:1, in...)</span>
+                <span class="method-start">351954 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.hyperlocal.DrivingSchoolTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">startUp</span>
-                <span class="method-start">140290 ms</span>
+                <span class="method-start">353650 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">drivingschoolPageTest</span>
-                <span class="method-start">151638 ms</span>
+                <span class="method-start">381506 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">screenShot</span>
-                <span class="method-start">159877 ms</span>
+                <span class="method-name">screenShot([TestResult name=drivingschoolPageTest status=SUCCESS method=DrivingSchoolTest.drivingschoolPageTest...)</span>
+                <span class="method-start">394078 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.hyperlocal.CareersTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">startUp</span>
-                <span class="method-start">161600 ms</span>
+                <span class="method-start">395947 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">careerPageTest</span>
-                <span class="method-start">171356 ms</span>
+                <span class="method-start">429866 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">screenShot</span>
-                <span class="method-start">189023 ms</span>
+                <span class="method-name">screenShot([TestResult name=careerPageTest status=SUCCESS method=CareersTest.careerPageTest()[pri:1, instance:c...)</span>
+                <span class="method-start">455934 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.hyperlocal.ContactUsTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">startUp</span>
-                <span class="method-start">191050 ms</span>
+                <span class="method-start">457627 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">contactUsPageTest</span>
-                <span class="method-start">199507 ms</span>
+                <span class="method-start">514445 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">screenShot</span>
-                <span class="method-start">206442 ms</span>
+                <span class="method-name">screenShot([TestResult name=contactUsPageTest status=SUCCESS method=ContactUsTest.contactUsPageTest()[pri:1, in...)</span>
+                <span class="method-start">521067 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.hyperlocal.EBookNowTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">startUp</span>
-                <span class="method-start">208232 ms</span>
+                <span class="method-start">522684 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">ebookTest</span>
-                <span class="method-start">218513 ms</span>
+                <span class="method-start">543773 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">screenShot</span>
-                <span class="method-start">224638 ms</span>
+                <span class="method-name">screenShot([TestResult name=ebookTest status=SUCCESS method=EBookNowTest.ebookTest()[pri:1, instance:com.hyperl...)</span>
+                <span class="method-start">551076 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.hyperlocal.AboutUsTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">startUp</span>
-                <span class="method-start">226398 ms</span>
+                <span class="method-start">552791 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">aboutUsTest</span>
-                <span class="method-start">235291 ms</span>
+                <span class="method-start">572554 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">screenShot</span>
-                <span class="method-start">243430 ms</span>
+                <span class="method-name">screenShot([TestResult name=aboutUsTest status=SUCCESS method=AboutUsTest.aboutUsTest()[pri:1, instance:com.hyp...)</span>
+                <span class="method-start">579478 ms</span>
               </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.hyperlocal.HomePageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite after">
+                <span class="method-name">email</span>
+                <span class="method-start">581234 ms</span>
+              </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

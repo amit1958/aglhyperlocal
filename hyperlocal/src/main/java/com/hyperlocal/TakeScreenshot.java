@@ -2,14 +2,10 @@ package com.hyperlocal;
 
 import java.io.File;
 import java.io.IOException;
-
-
-
-
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebDriver;
+
 
 
 public class TakeScreenshot extends origin{
@@ -23,7 +19,7 @@ public class TakeScreenshot extends origin{
 		try {
 		  // now copy the  screenshot to desired location using copyFile method
 		 
-		 FileUtils.copyFile(src, new File("D:\\Selenium\\Screenshots" + System.currentTimeMillis()+".png"));
+		 FileUtils.copyFile(src, new File("D:\\Selenium\\Screenshots"  + System.currentTimeMillis()+".png"));
 		       
 		}
 		 

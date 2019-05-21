@@ -4,7 +4,15 @@
   <test thread-count="5" name="Test">
     <classes>
       <class name="com.hyperlocal.HomePageTest"/>
-      <class name="com.hyperlocal.CarPageTest"/>
+      <class name="com.hyperlocal.CarPageTest">
+      <methods>
+        <include name="CarPageTest" />
+        <include name="carGetaquoteTest" />
+        <include name="bookaTestDriveTest" />
+        <include name="navigatetoEMICalculatorTest" />
+        <include name="carPriceCheckup" />
+      </methods>  
+       </class>
       <class name="com.hyperlocal.ServiceTest"/>
       <class name="com.hyperlocal.AccessoriesTest"/>
       <class name="com.hyperlocal.FinanceTest"/>

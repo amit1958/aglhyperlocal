@@ -29,7 +29,7 @@ public class AboutUsElements extends origin {
 	
 	public void AboutUs() throws InterruptedException  {
 		//WebElement cars= driver.findElement(By.linkText("Cars"));
-		WebElement aboutus= driver.findElement(By.xpath("/html/body/main/header/div[3]/div/div[1]/div/div[2]/ul/li[2]/a"));
+		WebElement aboutus= driver.findElement(By.xpath("//a[contains(text(),'About Us')]"));
 		aboutus.click();
 		String aboutusurl= driver.getCurrentUrl();
 		System.out.println("=====aboutusurl is ====" + aboutusurl);

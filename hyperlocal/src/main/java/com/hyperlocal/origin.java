@@ -17,6 +17,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
 
 import sendEmail.SendEmail;
@@ -47,7 +48,7 @@ public class origin {
 			//driver.manage().window().maximize();
 			driver.get(pr.getProperty("url"));
 			System.out.println("url is " +pr.getProperty("url"));
-			
+			Thread.sleep(5000);
 		}catch(Exception e){
 			e.printStackTrace();
 		}
@@ -55,11 +56,36 @@ public class origin {
 		
 	}
 	@AfterMethod
-	public void screenShot() throws EmailException{
-		TakeScreenshot myscreen= new TakeScreenshot();
-		myscreen.takesScreenshot();
+	public void screenShot(ITestResult result) throws EmailException, IOException{
+		String location= "D:\\Selenium\\Screenshots\\";
+		String methodname = result.getName();
+		System.out.println("===methodname===" +methodname);
+//		TakeScreenshot myscreen= new TakeScreenshot();
+//		myscreen.takesScreenshot();
+		try {
+	        File screenshots = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+	        FileUtils.copyFile(screenshots, new File(location  + methodname + "_" + System.currentTimeMillis() + ".png"));
+	    } catch (Exception e) {
+	          e.printStackTrace();
+	    } finally {
+	          driver.quit();
+	    }
 		/*SendEmail myemail = new SendEmail();
-		myemail.sendAnEmailwithAttachement("Please find the Attached file", "Testing on hyperlocal");*/
-		driver.quit();
+		myemail.sendAnEmailwithAttachement("Please find the Attached file for the executed testsuite", "Testing on hyperlocal");*/
+		
 	}
+	
+	@AfterSuite
+	public void email() throws EmailException{
+		try {
+			String subject= "Tested on" + " " + pr.getProperty("url");
+			SendEmail myemail = new SendEmail();
+			myemail.sendAnEmailwithAttachement("Please find the Attached file for the executed testsuite on Live hyperlocal site ", subject );
+		} catch (Exception e) {
+			// TODO: handle exception
+			System.out.println("++++++Email Problem++++++++");
+			
+		}	
+	
+		}
 }

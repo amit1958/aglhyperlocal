@@ -26,4 +26,9 @@ public class CarPageTest extends origin {
 		carpage1.navigatetoEMICalculator();
 		System.out.println("Navigate to Finance page has been verified");
 	}
+	@Test(priority=5)
+	public void carPriceCheckup() throws InterruptedException{
+		carpage1.carPriceValidation();
+		System.out.println("Navigate to Car page has been verified");
+	}
 }
