@@ -31,7 +31,7 @@ public class ServiceElements extends origin {
 		WebElement service= driver.findElement(By.xpath("//a[contains(text(),'Service')]"));
 		String carpageurl= driver.getCurrentUrl();
 		System.out.println("=====carpageurl is ====" + carpageurl);		service.click();
-		Thread.sleep(3000);
+		//Thread.sleep(3000);
 		driver.findElement(By.id("inpname")).sendKeys("TestServicepage");
 		driver.findElement(By.id("inpemail")).sendKeys("TestServicepage@testing.com");
 		driver.findElement(By.id("inpphone")).sendKeys("9800000000");
@@ -45,7 +45,7 @@ public class ServiceElements extends origin {
 		driver.findElement(By.id("inpaddress2")).sendKeys("TestServicepage");
 		driver.findElement(By.id("disclaimer")).click();
 		driver.findElement(By.id("btnsubmit")).click();
-		Thread.sleep(8000);
+		Thread.sleep(5000);
 		Asserts.thankYou();
 		}
 	

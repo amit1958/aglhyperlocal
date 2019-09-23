@@ -16,6 +16,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -46,7 +47,8 @@ public class InsuranceElements extends origin {
 		driver.findElement(By.id("inpphone")).sendKeys("9800000000");
 		driver.findElement(By.id("disclaimer")).click();
 		driver.findElement(By.id("btninsurance")).click();
-		Thread.sleep(10000);
+		myWait= new WebDriverWait(driver, 5);
+		myWait.until(ExpectedConditions.titleContains("Thank You"));
 		Asserts.thankYou();
 		}
 }

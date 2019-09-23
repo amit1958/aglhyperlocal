@@ -33,7 +33,7 @@ public class AboutUsElements extends origin {
 		aboutus.click();
 		String aboutusurl= driver.getCurrentUrl();
 		System.out.println("=====aboutusurl is ====" + aboutusurl);
-		Thread.sleep(5000);
+		//Thread.sleep(3000);
 		Asserts.AboutUsPageAssert();
 		System.out.println("Jenkin Testing");
 		}

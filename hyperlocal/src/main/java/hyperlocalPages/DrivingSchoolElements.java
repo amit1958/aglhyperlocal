@@ -42,7 +42,7 @@ public class DrivingSchoolElements extends origin {
 		driver.findElement(By.id("disclaimer")).click();
 		driver.findElement(By.id("savedriving")).click();
 		
-		Thread.sleep(10000);
+		Thread.sleep(5000);
 		Asserts.thankYou();
 		
 		}

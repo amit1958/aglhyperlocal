@@ -1,36 +1,268 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="1" ignored="11" total="21" passed="9">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="553817" started-at="2019-05-22T11:15:56Z" finished-at="2019-05-22T11:25:10Z">
+  <suite name="Suite" duration-ms="384533" started-at="2019-09-23T12:05:18Z" finished-at="2019-09-23T12:11:42Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="553817" started-at="2019-05-22T11:15:56Z" finished-at="2019-05-22T11:25:10Z">
-      <class name="com.hyperlocal.hyperlocalAllDomainsTest">
-        <test-method status="PASS" signature="startUp()[pri:0, instance:com.hyperlocal.hyperlocalAllDomainsTest@5622fdf]" name="startUp" is-config="true" duration-ms="22533" started-at="2019-05-22T11:15:56Z" finished-at="2019-05-22T11:16:19Z">
+    <test name="Test" duration-ms="384533" started-at="2019-09-23T12:05:18Z" finished-at="2019-09-23T12:11:42Z">
+      <class name="com.hyperlocal.ServiceTest">
+        <test-method status="PASS" signature="startUp()[pri:0, instance:com.hyperlocal.ServiceTest@146ba0ac]" name="startUp" is-config="true" duration-ms="11868" started-at="2019-09-23T12:05:39Z" finished-at="2019-09-23T12:05:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startUp -->
-        <test-method status="PASS" signature="allDomainTest()[pri:0, instance:com.hyperlocal.hyperlocalAllDomainsTest@5622fdf]" name="allDomainTest" duration-ms="522800" started-at="2019-05-22T11:16:19Z" finished-at="2019-05-22T11:25:01Z">
+        <test-method status="PASS" signature="servicecPageTest()[pri:1, instance:com.hyperlocal.ServiceTest@146ba0ac]" name="servicecPageTest" duration-ms="10500" started-at="2019-09-23T12:05:51Z" finished-at="2019-09-23T12:06:02Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- allDomainTest -->
-        <test-method status="PASS" signature="screenShot(org.testng.ITestResult)[pri:0, instance:com.hyperlocal.hyperlocalAllDomainsTest@5622fdf]" name="screenShot" is-config="true" duration-ms="8364" started-at="2019-05-22T11:25:01Z" finished-at="2019-05-22T11:25:10Z">
+        </test-method> <!-- servicecPageTest -->
+        <test-method status="PASS" signature="screenShot(org.testng.ITestResult)[pri:0, instance:com.hyperlocal.ServiceTest@146ba0ac]" name="screenShot" is-config="true" duration-ms="3440" started-at="2019-09-23T12:06:02Z" finished-at="2019-09-23T12:06:05Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=allDomainTest status=SUCCESS method=hyperlocalAllDomainsTest.allDomainTest()[pri:0, instance:com.hyperlocal.hyperlocalAllDomainsTest@5622fdf] output={null}]]]>
+                <![CDATA[[TestResult name=servicecPageTest status=SUCCESS method=ServiceTest.servicecPageTest()[pri:1, instance:com.hyperlocal.ServiceTest@146ba0ac] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenShot -->
-        <test-method status="PASS" signature="email()[pri:0, instance:com.hyperlocal.hyperlocalAllDomainsTest@5622fdf]" name="email" is-config="true" duration-ms="114" started-at="2019-05-22T11:25:10Z" finished-at="2019-05-22T11:25:10Z">
+      </class> <!-- com.hyperlocal.ServiceTest -->
+      <class name="com.hyperlocal.AboutUsTest">
+        <test-method status="PASS" signature="startUp()[pri:0, instance:com.hyperlocal.AboutUsTest@57fffcd7]" name="startUp" is-config="true" duration-ms="34474" started-at="2019-09-23T12:11:02Z" finished-at="2019-09-23T12:11:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startUp -->
+        <test-method status="PASS" signature="aboutUsTest()[pri:1, instance:com.hyperlocal.AboutUsTest@57fffcd7]" name="aboutUsTest" duration-ms="2459" started-at="2019-09-23T12:11:36Z" finished-at="2019-09-23T12:11:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aboutUsTest -->
+        <test-method status="PASS" signature="screenShot(org.testng.ITestResult)[pri:0, instance:com.hyperlocal.AboutUsTest@57fffcd7]" name="screenShot" is-config="true" duration-ms="3379" started-at="2019-09-23T12:11:39Z" finished-at="2019-09-23T12:11:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=aboutUsTest status=SUCCESS method=AboutUsTest.aboutUsTest()[pri:1, instance:com.hyperlocal.AboutUsTest@57fffcd7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+      </class> <!-- com.hyperlocal.AboutUsTest -->
+      <class name="com.hyperlocal.CareersTest">
+        <test-method status="PASS" signature="startUp()[pri:0, instance:com.hyperlocal.CareersTest@13deb50e]" name="startUp" is-config="true" duration-ms="73207" started-at="2019-09-23T12:08:25Z" finished-at="2019-09-23T12:09:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startUp -->
+        <test-method status="PASS" signature="careerPageTest()[pri:1, instance:com.hyperlocal.CareersTest@13deb50e]" name="careerPageTest" duration-ms="8635" started-at="2019-09-23T12:09:39Z" finished-at="2019-09-23T12:09:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- careerPageTest -->
+        <test-method status="PASS" signature="screenShot(org.testng.ITestResult)[pri:0, instance:com.hyperlocal.CareersTest@13deb50e]" name="screenShot" is-config="true" duration-ms="1977" started-at="2019-09-23T12:09:47Z" finished-at="2019-09-23T12:09:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=careerPageTest status=SUCCESS method=CareersTest.careerPageTest()[pri:1, instance:com.hyperlocal.CareersTest@13deb50e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+      </class> <!-- com.hyperlocal.CareersTest -->
+      <class name="com.hyperlocal.AccessoriesTest">
+        <test-method status="PASS" signature="startUp()[pri:0, instance:com.hyperlocal.AccessoriesTest@4dfa3a9d]" name="startUp" is-config="true" duration-ms="13138" started-at="2019-09-23T12:06:05Z" finished-at="2019-09-23T12:06:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startUp -->
+        <test-method status="PASS" signature="accessoriesPageTest()[pri:1, instance:com.hyperlocal.AccessoriesTest@4dfa3a9d]" name="accessoriesPageTest" duration-ms="15199" started-at="2019-09-23T12:06:18Z" finished-at="2019-09-23T12:06:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- accessoriesPageTest -->
+        <test-method status="PASS" signature="screenShot(org.testng.ITestResult)[pri:0, instance:com.hyperlocal.AccessoriesTest@4dfa3a9d]" name="screenShot" is-config="true" duration-ms="3792" started-at="2019-09-23T12:06:33Z" finished-at="2019-09-23T12:06:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=accessoriesPageTest status=SUCCESS method=AccessoriesTest.accessoriesPageTest()[pri:1, instance:com.hyperlocal.AccessoriesTest@4dfa3a9d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+      </class> <!-- com.hyperlocal.AccessoriesTest -->
+      <class name="com.hyperlocal.ContactUsTest">
+        <test-method status="PASS" signature="startUp()[pri:0, instance:com.hyperlocal.ContactUsTest@239963d8]" name="startUp" is-config="true" duration-ms="28966" started-at="2019-09-23T12:09:49Z" finished-at="2019-09-23T12:10:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startUp -->
+        <test-method status="PASS" signature="contactUsPageTest()[pri:1, instance:com.hyperlocal.ContactUsTest@239963d8]" name="contactUsPageTest" duration-ms="3409" started-at="2019-09-23T12:10:18Z" finished-at="2019-09-23T12:10:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- contactUsPageTest -->
+        <test-method status="PASS" signature="screenShot(org.testng.ITestResult)[pri:0, instance:com.hyperlocal.ContactUsTest@239963d8]" name="screenShot" is-config="true" duration-ms="4187" started-at="2019-09-23T12:10:22Z" finished-at="2019-09-23T12:10:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=contactUsPageTest status=SUCCESS method=ContactUsTest.contactUsPageTest()[pri:1, instance:com.hyperlocal.ContactUsTest@239963d8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+      </class> <!-- com.hyperlocal.ContactUsTest -->
+      <class name="com.hyperlocal.HomePageTest">
+        <test-method status="PASS" signature="startUp()[pri:0, instance:com.hyperlocal.HomePageTest@e25b2fe]" name="startUp" is-config="true" duration-ms="17199" started-at="2019-09-23T12:05:18Z" finished-at="2019-09-23T12:05:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startUp -->
+        <test-method status="PASS" signature="homePageTest()[pri:0, instance:com.hyperlocal.HomePageTest@e25b2fe]" name="homePageTest" duration-ms="95" started-at="2019-09-23T12:05:35Z" finished-at="2019-09-23T12:05:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homePageTest -->
+        <test-method status="PASS" signature="screenShot(org.testng.ITestResult)[pri:0, instance:com.hyperlocal.HomePageTest@e25b2fe]" name="screenShot" is-config="true" duration-ms="4291" started-at="2019-09-23T12:05:35Z" finished-at="2019-09-23T12:05:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=homePageTest status=SUCCESS method=HomePageTest.homePageTest()[pri:0, instance:com.hyperlocal.HomePageTest@e25b2fe] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+        <test-method status="PASS" signature="email()[pri:0, instance:com.hyperlocal.HomePageTest@e25b2fe]" name="email" is-config="true" duration-ms="6357" started-at="2019-09-23T12:11:42Z" finished-at="2019-09-23T12:11:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- email -->
-      </class> <!-- com.hyperlocal.hyperlocalAllDomainsTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- com.hyperlocal.HomePageTest -->
+      <class name="com.hyperlocal.DrivingSchoolTest">
+        <test-method status="PASS" signature="startUp()[pri:0, instance:com.hyperlocal.DrivingSchoolTest@f6c48ac]" name="startUp" is-config="true" duration-ms="15258" started-at="2019-09-23T12:07:59Z" finished-at="2019-09-23T12:08:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startUp -->
+        <test-method status="FAIL" signature="drivingschoolPageTest()[pri:1, instance:com.hyperlocal.DrivingSchoolTest@f6c48ac]" name="drivingschoolPageTest" duration-ms="7692" started-at="2019-09-23T12:08:15Z" finished-at="2019-09-23T12:08:22Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Thank You] but found [Driving School at Jaipur Road, Ajmer by Ajmer Auto Agencies | Maruti Suzuki ARENA]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Thank You] but found [Driving School at Jaipur Road, Ajmer by Ajmer Auto Agencies | Maruti Suzuki ARENA]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at org.testng.Assert.assertEquals(Assert.java:463)
+at hyperlocalUtils.Asserts.thankYou(Asserts.java:29)
+at hyperlocalPages.DrivingSchoolElements.drivingSchoolPage(DrivingSchoolElements.java:46)
+at com.hyperlocal.DrivingSchoolTest.drivingschoolPageTest(DrivingSchoolTest.java:11)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- drivingschoolPageTest -->
+        <test-method status="PASS" signature="screenShot(org.testng.ITestResult)[pri:0, instance:com.hyperlocal.DrivingSchoolTest@f6c48ac]" name="screenShot" is-config="true" duration-ms="3047" started-at="2019-09-23T12:08:22Z" finished-at="2019-09-23T12:08:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=drivingschoolPageTest status=FAILURE method=DrivingSchoolTest.drivingschoolPageTest()[pri:1, instance:com.hyperlocal.DrivingSchoolTest@f6c48ac] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+      </class> <!-- com.hyperlocal.DrivingSchoolTest -->
+      <class name="com.hyperlocal.InsuranceTest">
+        <test-method status="PASS" signature="startUp()[pri:0, instance:com.hyperlocal.InsuranceTest@464bee09]" name="startUp" is-config="true" duration-ms="41205" started-at="2019-09-23T12:07:11Z" finished-at="2019-09-23T12:07:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startUp -->
+        <test-method status="PASS" signature="insurancePageTest()[pri:1, instance:com.hyperlocal.InsuranceTest@464bee09]" name="insurancePageTest" duration-ms="4791" started-at="2019-09-23T12:07:52Z" finished-at="2019-09-23T12:07:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- insurancePageTest -->
+        <test-method status="PASS" signature="screenShot(org.testng.ITestResult)[pri:0, instance:com.hyperlocal.InsuranceTest@464bee09]" name="screenShot" is-config="true" duration-ms="2676" started-at="2019-09-23T12:07:57Z" finished-at="2019-09-23T12:07:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=insurancePageTest status=SUCCESS method=InsuranceTest.insurancePageTest()[pri:1, instance:com.hyperlocal.InsuranceTest@464bee09] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+      </class> <!-- com.hyperlocal.InsuranceTest -->
+      <class name="com.hyperlocal.EBookNowTest">
+        <test-method status="PASS" signature="startUp()[pri:0, instance:com.hyperlocal.EBookNowTest@3abbfa04]" name="startUp" is-config="true" duration-ms="29279" started-at="2019-09-23T12:10:26Z" finished-at="2019-09-23T12:10:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startUp -->
+        <test-method status="PASS" signature="ebookTest()[pri:1, instance:com.hyperlocal.EBookNowTest@3abbfa04]" name="ebookTest" duration-ms="2276" started-at="2019-09-23T12:10:55Z" finished-at="2019-09-23T12:10:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ebookTest -->
+        <test-method status="PASS" signature="screenShot(org.testng.ITestResult)[pri:0, instance:com.hyperlocal.EBookNowTest@3abbfa04]" name="screenShot" is-config="true" duration-ms="4463" started-at="2019-09-23T12:10:57Z" finished-at="2019-09-23T12:11:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ebookTest status=SUCCESS method=EBookNowTest.ebookTest()[pri:1, instance:com.hyperlocal.EBookNowTest@3abbfa04] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+      </class> <!-- com.hyperlocal.EBookNowTest -->
+      <class name="com.hyperlocal.FinanceTest">
+        <test-method status="PASS" signature="startUp()[pri:0, instance:com.hyperlocal.FinanceTest@6eebc39e]" name="startUp" is-config="true" duration-ms="27087" started-at="2019-09-23T12:06:37Z" finished-at="2019-09-23T12:07:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startUp -->
+        <test-method status="PASS" signature="financePageTest()[pri:1, instance:com.hyperlocal.FinanceTest@6eebc39e]" name="financePageTest" duration-ms="3196" started-at="2019-09-23T12:07:04Z" finished-at="2019-09-23T12:07:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- financePageTest -->
+        <test-method status="PASS" signature="screenShot(org.testng.ITestResult)[pri:0, instance:com.hyperlocal.FinanceTest@6eebc39e]" name="screenShot" is-config="true" duration-ms="3253" started-at="2019-09-23T12:07:08Z" finished-at="2019-09-23T12:07:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=financePageTest status=SUCCESS method=FinanceTest.financePageTest()[pri:1, instance:com.hyperlocal.FinanceTest@6eebc39e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+      </class> <!-- com.hyperlocal.FinanceTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

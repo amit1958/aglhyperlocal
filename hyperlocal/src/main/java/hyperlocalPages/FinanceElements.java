@@ -41,7 +41,7 @@ public class FinanceElements extends origin {
 		String price= carprice.getText();
 		System.out.println("=====price is " +price);
 		
-		Thread.sleep(5000);
+		//Thread.sleep(5000);
 		Asserts.financePageAssert();
 		
 		}
@@ -50,7 +50,7 @@ public class FinanceElements extends origin {
 	WebElement calculatedAmount=	driver.findElement(By.id("emiamount"));
 	String amountis= calculatedAmount.getText();
 	System.out.println("===amount is ===" +amountis);
-	Thread.sleep(5000);
+	//Thread.sleep(5000);
 	Asserts.financePageAssert();
 	}
 	

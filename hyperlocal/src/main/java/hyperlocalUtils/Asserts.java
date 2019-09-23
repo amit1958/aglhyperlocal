@@ -2,6 +2,8 @@ package hyperlocalUtils;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 import com.hyperlocal.origin;
@@ -20,6 +22,8 @@ public class Asserts extends origin{
 	}
 	 public static void thankYou(){
 		 String pagetitle= driver.getTitle();
+		 WebDriverWait mywait= new WebDriverWait(driver, 10);
+		 mywait.until(ExpectedConditions.titleContains(pagetitle));
 			String expectedtitle= "Thank You";
 			try {
 				Assert.assertEquals(pagetitle, expectedtitle);
@@ -104,6 +108,8 @@ public class Asserts extends origin{
 			}
 			public static void EbookNowPageAssert(){
 				String ebookexpected= driver.getCurrentUrl();
+//				myWait= new WebDriverWait(driver, 8);
+//				myWait.until(ExpectedConditions.urlContains(ebookexpected));
 				String actualContact= "https://www.marutisuzuki.com/channels/arena/service/ebook-car";
 				try {
 					Assert.assertEquals(actualContact, ebookexpected);;

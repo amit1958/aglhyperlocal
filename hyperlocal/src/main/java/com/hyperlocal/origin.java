@@ -35,7 +35,7 @@ public class origin {
 	public  void startUp() throws IOException{
 	
 		try{
-			File myfile = new File("C:\\Users\\AGL\\git\\hyperlocal\\hyperlocal\\MHL.properties");
+			File myfile = new File("C:\\Users\\AGL\\git\\aglhyperlocal\\hyperlocal\\MHL.properties");
 			System.out.println("exists:==> "+myfile.exists());
 			FileInputStream myInput= new FileInputStream(myfile);
 			pr.load(myInput);
@@ -47,8 +47,8 @@ public class origin {
 			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 			//driver.manage().window().maximize();
 			driver.get(pr.getProperty("url"));
-			System.out.println("url is " +pr.getProperty("url"));
-			Thread.sleep(5000);
+			//System.out.println("url is " +pr.getProperty("url"));
+			//Thread.sleep(2000);
 		}catch(Exception e){
 			e.printStackTrace();
 		}
@@ -80,7 +80,7 @@ public class origin {
 		try {
 			String subject= "Tested on" + " " + pr.getProperty("url");
 			SendEmail myemail = new SendEmail();
-			myemail.sendAnEmailwithAttachement("Please find the Attached file for the executed testsuite on Live hyperlocal site ", subject );
+			myemail.sendAnEmailwithAttachement("Please find the Attached file for the executed testsuite on Live hyperlocal site", subject );
 		} catch (Exception e) {
 			// TODO: handle exception
 			System.out.println("++++++Email Problem++++++++");

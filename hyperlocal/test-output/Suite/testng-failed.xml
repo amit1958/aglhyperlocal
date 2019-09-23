@@ -3,54 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.hyperlocal.HomePageTest">
+      <class name="com.hyperlocal.DrivingSchoolTest">
         <methods>
           <include name="screenShot"/>
-          <include name="email"/>
-          <include name="homePageTest"/>
-          <include name="startUp"/>
-        </methods>
-      </class> <!-- com.hyperlocal.HomePageTest -->
-      <class name="com.hyperlocal.AccessoriesTest">
-        <methods>
-          <include name="screenShot"/>
-          <include name="email"/>
-          <include name="accessoriesPageTest"/>
-          <include name="startUp"/>
-        </methods>
-      </class> <!-- com.hyperlocal.AccessoriesTest -->
-      <class name="com.hyperlocal.ServiceTest">
-        <methods>
-          <include name="screenShot"/>
-          <include name="email"/>
-          <include name="servicecPageTest"/>
-          <include name="startUp"/>
-        </methods>
-      </class> <!-- com.hyperlocal.ServiceTest -->
-      <class name="com.hyperlocal.InsuranceTest">
-        <methods>
-          <include name="screenShot"/>
-          <include name="email"/>
-          <include name="startUp"/>
-          <include name="insurancePageTest"/>
-        </methods>
-      </class> <!-- com.hyperlocal.InsuranceTest -->
-      <class name="com.hyperlocal.AboutUsTest">
-        <methods>
-          <include name="screenShot"/>
-          <include name="email"/>
-          <include name="aboutUsTest"/>
-          <include name="startUp"/>
-        </methods>
-      </class> <!-- com.hyperlocal.AboutUsTest -->
-      <class name="com.hyperlocal.FinanceTest">
-        <methods>
-          <include name="screenShot"/>
-          <include name="financePageTest"/>
+          <include name="drivingschoolPageTest"/>
           <include name="email"/>
           <include name="startUp"/>
         </methods>
-      </class> <!-- com.hyperlocal.FinanceTest -->
+      </class> <!-- com.hyperlocal.DrivingSchoolTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

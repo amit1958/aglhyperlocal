@@ -22,11 +22,11 @@ public class EBookNowElements extends origin {
 			Boolean ebook= driver.findElement(By.xpath("//a[contains(text(),'E Book Now')]")).isDisplayed();
 			if(ebook.equals(true)){
 				driver.findElement(By.xpath("//a[contains(text(),'E Book Now')]")).click();
-				   Thread.sleep(2000);
+				  Thread.sleep(2000);
 				   List<String> browserTabs = new ArrayList<String> (driver.getWindowHandles());
 					//switch to new tab
 					driver.switchTo().window(browserTabs .get(1));
-					Thread.sleep(5000);
+					//Thread.sleep(5000);
 					Asserts.EbookNowPageAssert();
 			}
 			else {

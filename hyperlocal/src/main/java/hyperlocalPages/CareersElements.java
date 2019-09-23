@@ -35,7 +35,7 @@ public class CareersElements extends origin {
 		System.out.println("=====carpageurl is ====" + carpageurl);
 		WebElement career= driver.findElement(By.xpath("//a[contains(text(),'Careers')]"));
 		career.click();
-		Thread.sleep(5000);
+		//Thread.sleep(5000);
 		try {
 			Boolean apply= driver.findElement(By.xpath("/html/body/main/section/div/div/div[2]/div[2]/a")).isDisplayed();
 			if(apply.equals(true)){
@@ -48,7 +48,7 @@ public class CareersElements extends origin {
 					
 					driver.findElement(By.id("disclaimer")).click();
 					driver.findElement(By.id("btnsubmit")).click();
-					Thread.sleep(7000);
+					Thread.sleep(3000);
 					Asserts.thankYou();
 			}
 			else {

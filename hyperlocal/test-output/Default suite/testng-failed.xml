@@ -3,14 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.hyperlocal.hyperlocalAllDomainsTest">
+      <class name="com.hyperlocal.EBookNowTest">
         <methods>
           <include name="screenShot"/>
+          <include name="ebookTest"/>
           <include name="email"/>
-          <include name="allDomainTest"/>
           <include name="startUp"/>
         </methods>
-      </class> <!-- com.hyperlocal.hyperlocalAllDomainsTest -->
+      </class> <!-- com.hyperlocal.EBookNowTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -36,7 +36,7 @@ public class CarPageElements extends origin {
 		driver.findElement(By.linkText("WagonR")).click();
 		String carpageurl= driver.getCurrentUrl();
 		System.out.println("=====carpageurl is ====" + carpageurl);
-		Thread.sleep(5000);
+		//Thread.sleep(5000);
 		Asserts.carPageAssert();
 		
 		}
@@ -55,7 +55,7 @@ public class CarPageElements extends origin {
 		driver.findElement(By.id("inpphone")).sendKeys("9800000000");
 		driver.findElement(By.id("disclaimer")).click();
 		driver.findElement(By.id("saveaquote")).click();
-		Thread.sleep(10000);
+		Thread.sleep(5000);
 		Asserts.thankYou();
 		
 		}

@@ -33,7 +33,7 @@ public class ContactUsElements extends origin {
 		WebElement contact= driver.findElement(By.xpath("//a[contains(text(),'Contact Us')]"));
 		contact.click();
 	
-		Thread.sleep(5000);
+		//Thread.sleep(5000);
 		Asserts.contactPageAssert();
 		
 		}

@@ -15,7 +15,7 @@ public class AccessoriesElements extends origin {
 		accessories.click();
 		String accessoriesurl= driver.getCurrentUrl();
 		System.out.println("=====accessoriespageurl is ====" + accessoriesurl);		
-		Thread.sleep(3000);
+		Thread.sleep(5000);
 		Select carmodel= new Select(driver.findElement(By.id("brochure-drop")));
 		carmodel.selectByVisibleText("WagonR");
 		driver.findElement(By.id("inpname")).sendKeys("TestAccessoriesPage");
